@@ -1,0 +1,7 @@
+---
+
+- name: add developers public keys
+  authorized_key: user="{{ item.user }}"
+                  key="{{ item.key }}"
+  when: ssh_keys is defined
+  with_items: ssh_keys

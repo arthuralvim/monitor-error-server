@@ -1,0 +1,6 @@
+---
+
+- name: checking required variables
+  fail: msg="{{ item }} is not defined"
+  when: check_vars_list is defined and not {{ item }}
+  with_items: check_vars_list

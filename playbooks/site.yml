@@ -1,0 +1,4 @@
+---
+# file: site.yml
+
+- include: playbooks.yml

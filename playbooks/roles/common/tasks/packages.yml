@@ -1,0 +1,6 @@
+---
+
+- name: install packages in ubuntu
+  apt: pkg={{ item }} state=latest update_cache={{ update_cache }} cache_valid_time={{ cache_valid_time }}
+  when: package_list is defined
+  with_items: package_list
