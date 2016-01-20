@@ -1,0 +1,20 @@
+---
+
+- name: Add apt repo
+  apt_repository: repo='deb https://packagecloud.io/grafana/stable/debian/ wheezy main' state=present
+
+- name: Add packagecloud.io GPG key to apt-key
+  apt_key: url=https://packagecloud.io/gpg.key state=present
+
+- name: Update APT package cache
+  apt: update_cache=true
+
+- set_fact: package_list={{ grafana_package_list }}
+
+- include: ../../common/tasks/packages.yml
+  tags:
+    - base:packages
+    - packages
+
+- name: start grafana
+  service: name=grafana-server state=started

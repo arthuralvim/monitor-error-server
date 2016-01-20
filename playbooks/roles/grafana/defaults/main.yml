@@ -1,0 +1,7 @@
+---
+
+grafana_base_path: "/opt/grafana"
+grafana_repo: "https://github.com/grafana/grafana.git"
+grafana_package_list:
+    - apt-transport-https
+    - grafana

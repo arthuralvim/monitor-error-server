@@ -1,0 +1,11 @@
+---
+
+- set_fact: package_list={{ postgres_package_list }}
+
+- include: ../../common/tasks/packages.yml
+  tags:
+    - base:packages
+    - packages
+
+- name: install postgresql python bindings
+  pip: name=psycopg2

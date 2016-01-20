@@ -1,0 +1,21 @@
+---
+
+base_package_list:
+    - language-pack-pt
+    - unzip
+    - libjpeg-progs
+    - libjpeg62-dev
+    - libjpeg62
+    - build-essential
+    - gettext
+    - libxml2
+    - libxml2-dev
+    - libxslt-dev
+    - lib32z1-dev
+    - python-libxml2
+    - libssl-dev
+    - libffi-dev
+    - python-dev
+    - python-pip
+    - git
+    - curl

@@ -1,0 +1,7 @@
+---
+
+postgres_package_list:
+    - postgresql
+    - postgresql-contrib
+    - postgresql-client
+    - libpq-dev

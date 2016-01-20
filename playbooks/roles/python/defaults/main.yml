@@ -1,0 +1,6 @@
+---
+
+python_package_list:
+    - python
+    - python-dev
+    - python-pip

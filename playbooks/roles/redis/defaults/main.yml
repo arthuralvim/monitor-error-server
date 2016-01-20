@@ -1,0 +1,4 @@
+---
+
+redis_package_list:
+    - redis-server

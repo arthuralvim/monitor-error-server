@@ -1,0 +1,4 @@
+---
+
+# ssh_keys:
+#  - { usuario: "{{ application_username }}", chave: "{{ lookup('file', '/Users/arthuralvim/.ssh/id_rsa.pub') }}"}

@@ -1,0 +1,13 @@
+---
+
+- set_fact: package_list={{ base_package_list }}
+
+- include: ../../common/tasks/packages.yml
+  tags:
+    - base:packages
+    - packages
+
+- include: ../../common/tasks/keys.yml
+  tags:
+    - base:keys
+    - keys

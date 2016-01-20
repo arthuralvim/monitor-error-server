@@ -1,0 +1,14 @@
+---
+
+- set_fact: package_list={{ python_package_list }}
+
+- include: ../../common/tasks/packages.yml
+  tags:
+    - base:packages
+    - packages
+
+- name: install basic python packages
+  pip: name={{ item }}
+  with_items:
+    - pep8
+    - virtualenv
